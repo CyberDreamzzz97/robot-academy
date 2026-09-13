@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Robot Academy</title>
+<meta name="description" content="A small 3D village where robot teachers explain how to prompt AI systems.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232f6fd0'/%3E%3Crect x='7' y='12' width='18' height='5' rx='2' fill='%237ef0d0'/%3E%3Crect x='14' y='4' width='4' height='5' rx='2' fill='%23ffd98a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="./styles/ui.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.186.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.186.0/examples/jsm/"
+  }
+}
+</script>
+</head>
+<body>
+
+<canvas id="game"></canvas>
+
+<div id="loading">
+  <div class="load-inner">
+    <div class="load-bot"></div>
+    <p>Waking the robots…</p>
+  </div>
+</div>
+
+<div id="hud"></div>
+<div id="dialogue" hidden></div>
+<div id="forge" hidden></div>
+
+<noscript>
+  <div class="noscript">Robot Academy needs JavaScript and WebGL to run.</div>
+</noscript>
+
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
